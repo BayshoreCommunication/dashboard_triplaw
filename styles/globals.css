@@ -21,7 +21,7 @@
 }
 
 .tiptap-toolbar button {
-  @apply hover:bg-gray-200  px-1 min-w-[30px] h-[28px] flex justify-center items-center rounded disabled:opacity-50 disabled:hover:!bg-transparent;
+  @apply hover:bg-gray-200  px-1 min-w-[30px] h-[28px] flex   justify-center items-center rounded disabled:opacity-50 disabled:hover:!bg-transparent;
 }
 
 .tiptap-toolbar .is-active {

@@ -18,6 +18,11 @@ const nextConfig = {
         hostname: 'lh3.googleusercontent.com',
         // hostname: "**",
       },
+      {
+        protocol: 'https',
+        hostname: 'bayshore.nyc3.digitaloceanspaces.com',
+        // hostname: "**",
+      },   
     ],
   },
 };

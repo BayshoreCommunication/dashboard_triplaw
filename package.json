@@ -23,6 +23,7 @@
     "@tiptap/pm": "^2.1.13",
     "@tiptap/react": "^2.1.13",
     "@tiptap/starter-kit": "^2.1.13",
+    "aws-sdk": "^2.1692.0",
     "axios": "^1.6.4",
     "chart.js": "^4.4.1",
     "clsx": "^2.1.0",

@@ -20,7 +20,7 @@ function ImageUploadField({
   imageSubmitting,
 }) {
   const s3 = new AWS.S3({
-    endpoint: "https://nyc3.digitaloceanspaces.com", // ✅ Use correct region URL
+    endpoint: "https://nyc3.digitaloceanspaces.com", 
     accessKeyId: "DO00HFNWVPYJBRTBVZZJ", // Replace with your access key
     secretAccessKey: "VTaTd4LASdw+OjDylmiBOPa4GOD956R/25597C7ULX8", // Replace with your secret key
   });
@@ -40,12 +40,12 @@ function ImageUploadField({
 
     // Check image size
     if (image.size > imageMaxSize * 1024) {
-      toast.error(Image size exceeds the limit of ${imageMaxSize}KB);
+      toast.error(`Image size exceeds the limit of ${imageMaxSize}KB`);
       return;
     }
 
     // Generate a unique filename
-    const uniqueFileName = uploads/${Date.now()}-${uuidv4()}-${encodeURIComponent(image.name)};
+    const uniqueFileName = `uploads/${Date.now()}-${uuidv4()}-${encodeURIComponent(image.name)}`;
 
     // Set upload parameters
     const params = {
@@ -91,7 +91,7 @@ function ImageUploadField({
 
     // Validate image size
     if (selectedImage.size > imageMaxSize * 1024) {
-      toast.error(Image size exceeds the limit of ${imageMaxSize}KB);
+      toast.error(`Image size exceeds the limit of ${imageMaxSize}KB`);
       return;
     }
 
@@ -127,7 +127,7 @@ function ImageUploadField({
 
     // Validate image size
     if (droppedImage.size > imageMaxSize * 1024) {
-      toast.error(Image size exceeds the limit of ${imageMaxSize}KB);
+      toast.error(`Image size exceeds the limit of ${imageMaxSize}KB`);
       return;
     }
 
@@ -151,7 +151,7 @@ function ImageUploadField({
             <IconCloudArrow />
           </span>
           <p className="mt-5 text-xl font-medium">Drag and drop asset here</p>
-          <p className="mt-1 text-sm">{Image size (Max ${imageMaxSize}KB)}</p>
+          <p className="mt-1 text-sm">{`Image size (Max ${imageMaxSize}KB)`}</p>
           <p className="mt-3 font-medium text-black text-lg">Or</p>
 
           <input

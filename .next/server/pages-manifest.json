@@ -1,0 +1,10 @@
+{
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/_app": "pages/_app.js",
+  "/testimage": "pages/testimage.js",
+  "/api/auth/[...nextauth]": "pages/api/auth/[...nextauth].js",
+  "/blog": "pages/blog.js",
+  "/categories": "pages/categories.js",
+  "/media": "pages/media.js"
+}

@@ -1,12 +1,12 @@
-import { useState } from "react";
+import { IconPaperPlus } from "@/components/Icons";
 import PageWrapper from "@/components/Layout/PageWrapper";
 import ImageDetails from "@/components/Media/ImageDetails";
 import ImageItem from "@/components/Media/ImageItem";
-import { IconPaperPlus } from "@/components/Icons";
 import ImageUploadModal from "@/components/Modal/ImageUploadModal";
 import useGetData from "@/hooks/useGetData";
-import { toast } from "sonner";
 import usePostData from "@/hooks/usePostData";
+import { useState } from "react";
+import { toast } from "sonner";
 
 function MediaPage() {
   const [selectedImage, setSelectedImage] = useState(null);
